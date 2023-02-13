@@ -13,7 +13,7 @@
                 Console.Clear();
                 Console.WriteLine("Please choose any options");
                 Console.WriteLine("1.Find Frequency Of words in a sentence \n" +
-                    "2.Find Frequency Of words in a large paragraph \n" +
+                    "2.Find Frequency Of words in a large paragraph and remove word from paragraph \n" +
                     "12.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -55,6 +55,11 @@
             }
             Console.WriteLine("Displaying after add operation\n---------------------------------");
             Console.WriteLine("Word      NumberOfFrequency");
+            hashTabe.Display(); 
+            string s = "avoidable";
+            hashTabe.Remove(s);
+            Console.WriteLine("\n----------------------------------", s);
+            Console.WriteLine("After removed word:  {0}\n----------------------------------\n", s);
             hashTabe.Display();
         }
     }
