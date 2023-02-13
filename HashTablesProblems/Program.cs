@@ -6,7 +6,7 @@
         static void Main(string[] args)
         {
             MyMapNode<string, string> hash = new MyMapNode<string, string>(5);
-            Console.WriteLine("Welcome to the Hash table Problems");
+            Console.WriteLine("Welcome to the Hash Tables Problems");
             bool check = true;
             while (check)
             {
